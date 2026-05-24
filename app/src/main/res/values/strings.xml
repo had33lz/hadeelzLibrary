@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">hadeelzLibrary</string>
+    <string name="app_name">Had33lz Library</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="fullname_hint">Enter Full Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="add_book">Add Book</string>
+    <string name="update_book">Update Book</string>
+    <string name="delete_book">Delete Book</string>
+    <string name="view_reports">View Reports</string>
+    <string name="logout">Logout</string>
+    <string name="student_name_hint">Student Name</string>
+    <string name="book_title_hint">Book Title</string>
+    <string name="author_hint">Author</string>
+    <string name="category_hint">Category</string>
+    <string name="quantity_hint">Quantity</string>
+    <string name="borrow_date_hint">Borrow Date (YYYY-MM-DD)</string>
+    <string name="return_date_hint">Return Date (YYYY-MM-DD)</string>
+    <string name="calculate">Calculate Fine</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
 </resources>
