@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_main"
+    android:padding="32dp">
+
+    <!-- Logo Icon -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Library Logo"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Had33lz Library"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/slate"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Digital Library Manager"
+        android:textSize="14sp"
+        android:textColor="@color/olive"
+        android:layout_marginBottom="48dp"/>
+
+    <!-- Loading Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/cinnamon"/>
+
+</LinearLayout>
+

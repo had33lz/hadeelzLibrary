@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/slate"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage your library"
+            android:textSize="13sp"
+            android:textColor="@color/olive"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- ── BOOK SECTION TITLE ── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Management"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/cinnamon"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Book Title -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book Title"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/slate"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Author -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Author"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/slate"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Category -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/slate"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Quantity -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/slate"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ADD + RESET Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnAddBook"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Add Book"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/cinnamon"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/olive"/>
+
+        </LinearLayout>
+
+
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/burlap"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ── NAVIGATION SECTION ── -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigation"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/cinnamon"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Transactions Button -->
+        <Button
+            android:id="@+id/btnTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Book Transactions"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/cinnamon"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Reports Button -->
+        <Button
+            android:id="@+id/btnViewReports"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="View Reports"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/olive"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/slate"/>
+
+    </LinearLayout>
+</ScrollView>
